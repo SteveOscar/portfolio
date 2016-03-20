@@ -36,6 +36,13 @@ $(document).ready(function() {
       if($(window).scrollTop() > 400 || $(window).scrollTop() < 200){
         $('.level-two').hide();
       }
+      if($(window).scrollTop() > 400){
+        $('.level-two').hide();
+        $('.level-three').show();
+      }
+      if($(window).scrollTop() > 600 || $(window).scrollTop() < 400){
+        $('.level-three').hide();
+      }
       if($(window).scrollTop() > 500 || $(window).scrollTop() < 300){
         $('.third-arrow').hide();
       }
