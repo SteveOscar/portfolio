@@ -1,0 +1,163 @@
+/*
+  ========================================
+  body
+  ========================================
+*/
+
+body {
+  background-color: black;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+}
+a {
+  color: wheat;
+}
+a:hover, a.dark:hover {
+  color: red;
+}
+a.dark {
+  color: black;
+}
+h5 {
+  font-size: 1.5em;
+}
+ul li {
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: .8em;
+    text-align: left;
+}
+#mountains {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+#reveal-box1 {
+  width: 100%;
+  height: 100px;
+  background-color: wheat;
+  position: fixed;
+  top: 0;
+}
+#reveal-box2 {
+  width: 100%;
+  height: 100px;
+  background-color: wheat;
+  position: fixed;
+  top: 200px;
+}
+#reveal-box3 {
+  width: 100%;
+  height: 100px;
+  background-color: wheat;
+  position: fixed;
+  top: 400px;
+}
+#name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 30px;
+}
+/*
+  ========================================
+  first level
+  ========================================
+*/
+.arrows {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+  height: 60px;
+}
+.first-arrow {
+  top: 100px;
+}
+#projects {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 130px;
+  color: black;
+}
+#project-one{
+  position: absolute;
+  top: 210px;
+  color: wheat;
+}
+#project-two{
+  position: absolute;
+  top: 310px;
+  color: black;
+}
+#project-three{
+  position: absolute;
+  top: 410px;
+  color: wheat;
+}
+.first-links {
+  display: none;
+}
+/*
+  ========================================
+  second level
+  ========================================
+*/
+.second-arrow {
+  top: 510px;
+  display: none;
+}
+.level-two {
+  display: none;
+}
+#skills {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 330px;
+  color: black;
+}
+#skill-one{
+  position: absolute;
+  top: 410px;
+  color: wheat;
+}
+#skill-two{
+  position: absolute;
+  top: 510px;
+  color: black;
+}
+#skill-three{
+  position: absolute;
+  top: 610px;
+  color: wheat;
+}
+
+/*
+  ========================================
+  third level
+  ========================================
+*/
+.third-arrow {
+  top: 710px;
+  display: none;
+}
+@media screen and (min-width: 500px){
+  #headline{
+    font-size: 3.5rem;
+  }
+}
+#end {
+  position: absolute;
+  top: 1200px;
+}
