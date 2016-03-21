@@ -17,9 +17,6 @@ $(document).ready(function() {
   });
 
   $(window).scroll(function() {
-      if($(window).scrollTop() > 150){
-        $('.first-links').hide();
-      }
       if($(window).scrollTop() > 200){
         $('.level-one').hide();
         $('.level-two').show();
@@ -27,10 +24,10 @@ $(document).ready(function() {
       if($(window).scrollTop() < 200){
         $('.level-two').hide();
       }
-      if($(window).scrollTop() > 300){
+      if($(window).scrollTop() > 278){
         $('.second-arrow').hide();
       }
-      if($(window).scrollTop() < 300 && $(window).scrollTop() > 100){
+      if($(window).scrollTop() < 278 && $(window).scrollTop() > 100){
         $('.second-arrow').show();
       }
       if($(window).scrollTop() > 400 || $(window).scrollTop() < 200){
@@ -43,10 +40,10 @@ $(document).ready(function() {
       if($(window).scrollTop() > 600 || $(window).scrollTop() < 400){
         $('.level-three').hide();
       }
-      if($(window).scrollTop() > 500 || $(window).scrollTop() < 300){
+      if($(window).scrollTop() > 475 || $(window).scrollTop() < 300){
         $('.third-arrow').hide();
       }
-      if($(window).scrollTop() < 500 && $(window).scrollTop() > 300){
+      if($(window).scrollTop() < 475 && $(window).scrollTop() > 300){
         $('.third-arrow').show();
       }
 

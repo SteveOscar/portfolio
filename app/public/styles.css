@@ -179,6 +179,9 @@ ul li {
   top: 810px;
   color: wheat;
 }
+.thumbnail {
+  
+}
 @media screen and (min-width: 500px){
   #headline{
     font-size: 3.5rem;
