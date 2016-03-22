@@ -27,6 +27,12 @@ $(document).ready(function() {
       if($(window).scrollTop() > 278){
         $('.second-arrow').hide();
       }
+      if($(window).scrollTop() > 300) {
+        $('#sun').hide();
+      }
+      if($(window).scrollTop() < 300) {
+        $('#sun').show();
+      }
       if($(window).scrollTop() < 278 && $(window).scrollTop() > 100){
         $('.second-arrow').show();
       }
@@ -45,6 +51,12 @@ $(document).ready(function() {
       }
       if($(window).scrollTop() < 475 && $(window).scrollTop() > 300){
         $('.third-arrow').show();
+      }
+      if($(window).scrollTop() > 600) {
+        $('#moon').hide();
+      }
+      if($(window).scrollTop() < 600) {
+        $('#moon').show();
       }
 
   });

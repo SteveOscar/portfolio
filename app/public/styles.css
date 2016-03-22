@@ -51,6 +51,7 @@ ul li {
   background-color: wheat;
   position: fixed;
   top: 200px;
+  z-index: 1;
 }
 #reveal-box3 {
   width: 100%;
@@ -58,6 +59,7 @@ ul li {
   background-color: wheat;
   position: fixed;
   top: 400px;
+  z-index: 0;
 }
 #name {
   position: absolute;
@@ -99,6 +101,7 @@ ul li {
   position: absolute;
   top: 310px;
   color: black;
+  z-index: 1;
 }
 #project-three{
   position: absolute;
@@ -107,6 +110,14 @@ ul li {
 }
 .first-links {
   display: none;
+}
+#sun {
+  position: absolute;
+  top: 510px;
+  left: 10%;
+  height: 100px;
+  opacity: .5;
+  z-index: 0;
 }
 /*
   ========================================
@@ -137,11 +148,20 @@ ul li {
   position: absolute;
   top: 510px;
   color: black;
+  z-index: 1;
 }
 #skill-three{
   position: absolute;
   top: 610px;
   color: wheat;
+}
+#moon {
+  position: absolute;
+  top: 810px;
+  left: 10%;
+  height: 100px;
+  opacity: .5;
+  z-index: 0;
 }
 
 /*
@@ -173,6 +193,7 @@ ul li {
   position: absolute;
   top: 710px;
   color: black;
+  z-index: 1;
 }
 #about-three{
   position: absolute;
@@ -180,7 +201,7 @@ ul li {
   color: wheat;
 }
 .thumbnail {
-  
+
 }
 @media screen and (min-width: 500px){
   #headline{
