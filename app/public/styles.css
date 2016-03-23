@@ -203,16 +203,41 @@ ul li {
 .thumbnail {
 
 }
+/*
+  ========================================
+  fourth level
+  ========================================
+*/
+.level-four {
+  display: none;
+}
+#contact {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 730px;
+  color: black;
+}
+#contact-one{
+  position: absolute;
+  top: 810px;
+  color: wheat;
+}
+#contact-two{
+  position: absolute;
+  top: 910px;
+  color: black;
+  z-index: 1;
+}
+#contact-three{
+  position: absolute;
+  top: 1010px;
+  color: wheat;
+}
+
 @media screen and (min-width: 500px){
   #headline{
     font-size: 3.5rem;
   }
-}
-#spacer {
-  position: absolute;
-  top: 2000px;
-}
-#end {
-  position: absolute;
-  top: 1200px;
 }

@@ -54,9 +54,11 @@ $(document).ready(function() {
       }
       if($(window).scrollTop() > 600) {
         $('#moon').hide();
+        $('.level-four').show();
       }
       if($(window).scrollTop() < 600) {
         $('#moon').show();
+        $('.level-four').hide();
       }
 
   });
