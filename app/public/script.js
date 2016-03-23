@@ -56,8 +56,11 @@ $(document).ready(function() {
         $('#moon').hide();
         $('.level-four').show();
       }
-      if($(window).scrollTop() < 600) {
+      if($(window).scrollTop() < 610) {
         $('#moon').show();
+        $('.level-four').hide();
+      }
+      if($(window).scrollTop() > 810) {
         $('.level-four').hide();
       }
 
