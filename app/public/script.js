@@ -1,6 +1,38 @@
 $(document).ready(function() {
   $('#headline').delay( 500 ).fadeTo('slow', 1);
 
+  $('#down-button').on('click', function() {
+    if ($(window).scrollTop() < 93 ) {
+      $(document.body).animate({ scrollTop: 100 }, 600);
+      return false;
+    } else if ($(window).scrollTop() < 293 ) {
+      $(document.body).animate({ scrollTop: 300 }, 600);
+      return false;
+    } else if ($(window).scrollTop() < 493 ) {
+      $(document.body).animate({ scrollTop: 500 }, 600);
+      return false;
+    } else if ($(window).scrollTop() < 693 ) {
+      $(document.body).animate({ scrollTop: 710 }, 600);
+      return false;
+    }
+  })
+
+  $('#up-button').on('click', function() {
+    if ($(window).scrollTop() < 107 ) {
+      $(document.body).animate({ scrollTop: 0 }, 600);
+      return false;
+    } else if ($(window).scrollTop() < 307 ) {
+      $(document.body).animate({ scrollTop: 100 }, 600);
+      return false;
+    } else if ($(window).scrollTop() < 515 ) {
+      $(document.body).animate({ scrollTop: 300 }, 600);
+      return false;
+    } else if ($(window).scrollTop() < 716 ) {
+      $(document.body).animate({ scrollTop: 510 }, 600);
+      return false;
+    }
+  })
+
   //when scrolling...
   $(window).scroll(function() {
       if($(window).scrollTop() > 50){

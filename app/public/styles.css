@@ -13,6 +13,18 @@ body {
   height:1700px;
   overflow-y: scroll;
 }
+.scroll-button {
+  position: fixed;
+  width: 60px;
+  top: 10px;
+  z-index: 99;
+}
+#up-button {
+  right: 10px
+}
+#down-button {
+  left: 10px;
+}
 a {
   color: wheat;
 }
