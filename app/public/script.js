@@ -9,7 +9,7 @@ $(document).ready(function() {
       $(document.body).animate({ scrollTop: 300 }, 600);
       return false;
     } else if ($(window).scrollTop() < 493 ) {
-      $(document.body).animate({ scrollTop: 500 }, 600);
+      $(document.body).animate({ scrollTop: 507 }, 600);
       return false;
     } else if ($(window).scrollTop() < 693 ) {
       $(document.body).animate({ scrollTop: 710 }, 600);
@@ -29,6 +29,9 @@ $(document).ready(function() {
       return false;
     } else if ($(window).scrollTop() < 716 ) {
       $(document.body).animate({ scrollTop: 510 }, 600);
+      return false;
+    } else if ($(window).scrollTop() > 725 ) {
+      $(document.body).animate({ scrollTop: 710 }, 600);
       return false;
     }
   })
@@ -94,6 +97,9 @@ $(document).ready(function() {
       }
       if($(window).scrollTop() > 810) {
         $('.level-four').hide();
+      }
+      if($(window).scrollTop() > 795) {
+        $('#ufo').fadeTo('fast', 0);
       }
 
   });

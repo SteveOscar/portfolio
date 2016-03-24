@@ -13,17 +13,28 @@ body {
   height:1700px;
   overflow-y: scroll;
 }
-.scroll-button {
+#button-box {
   position: fixed;
-  width: 60px;
-  top: 15px;
+  top: 10px;
+  height: 70px;
+  width: 340px;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 99;
 }
+.scroll-button {
+  position: relative;
+  width: 60px;
+}
 #up-button {
-  right: 10px
+  float: right;
 }
 #down-button {
-  left: 10px;
+  float: left;
+}
+.heading {
+  font-family: 'Architects Daughter', cursive;
 }
 a {
   color: wheat;
@@ -49,6 +60,14 @@ ul li {
   left: 0;
   width: 100%;
   z-index: 20;
+}
+#ufo {
+  position: absolute;
+  right: 30%;
+  top: 1000px;
+  width: 350px;
+  z-index: 1;
+  opacity: .8;
 }
 #reveal-box1 {
   width: 100%;
