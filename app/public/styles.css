@@ -38,6 +38,7 @@ body {
 }
 a {
   color: wheat;
+  text-decoration: underline;
 }
 a:hover, a.dark:hover {
   color: red;
@@ -265,6 +266,9 @@ ul li {
   position: absolute;
   top: 1010px;
   color: wheat;
+}
+#open-src {
+  display: inline;
 }
 
 @media screen and (min-width: 500px){
