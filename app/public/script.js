@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+  loopButton = function() {
+    $('#down-button').fadeTo('slow', 0.5)
+    $('#down-button').fadeTo('slow', 1, function() {
+      loopButton();
+    })
+  }
+  loopButton();
+
   $('#down-button').on('click', function() {
     if ($(window).scrollTop() < 93 ) {
       $(document.body).animate({ scrollTop: 100 }, 600);
@@ -36,63 +45,72 @@ $(document).ready(function() {
 
   //when scrolling...
   $(window).scroll(function() {
-      if($(window).scrollTop() > 50){
-        $('.first-arrow').hide();
-        $('.first-links').fadeTo('fast', 1);
-        $('.level-one').show();
-      }
-      if($(window).scrollTop() < 50){
-        $('.first-arrow').show();
-        $('.first-links').hide();
-      }
-      if($(window).scrollTop() > 200){
-        $('.level-one').hide();
-        $('.level-two').show();
-      }
-      if($(window).scrollTop() < 200){
-        $('.level-two').hide();
-      }
-      if($(window).scrollTop() < 278 && $(window).scrollTop() > 100){
-        $('.second-arrow').show();
-      }
-      if($(window).scrollTop() > 278){
-        $('.second-arrow').hide();
-      }
-      if($(window).scrollTop() > 300) {
-        $('#sun').hide();
-      }
-      if($(window).scrollTop() < 300) {
-        $('#sun').show();
-      }
-      if($(window).scrollTop() > 400 || $(window).scrollTop() < 200){
-        $('.level-two').hide();
-      }
-      if($(window).scrollTop() > 400){
-        $('.level-two').hide();
-        $('.level-three').show();
-      }
-      if($(window).scrollTop() > 600 || $(window).scrollTop() < 400){
-        $('.level-three').hide();
-      }
-      if($(window).scrollTop() > 475 || $(window).scrollTop() < 300){
-        $('.third-arrow').hide();
-      }
-      if($(window).scrollTop() < 475 && $(window).scrollTop() > 300){
-        $('.third-arrow').show();
-      }
-      if($(window).scrollTop() > 600) {
-        $('#moon').hide();
-        $('.level-four').show();
-      }
-      if($(window).scrollTop() < 610) {
-        $('#moon').show();
-        $('.level-four').hide();
-      }
-      if($(window).scrollTop() > 810) {
-        $('.level-four').hide();
-      }
-      if($(window).scrollTop() > 795) {
-        $('#ufo').fadeTo('fast', 0);
-      }
+    if($(window).scrollTop() > 10){
+      $('#steve').hide();
+    }
+    if($(window).scrollTop() < 9){
+      $('#steve').show();
+    }
+    if($(window).scrollTop() > 20){
+      $('#down-button').fadeTo('slow', 1);
+    }
+    if($(window).scrollTop() > 50){
+      $('.first-arrow').hide();
+      $('.first-links').fadeTo('fast', 1);
+      $('.level-one').show();
+    }
+    if($(window).scrollTop() < 50){
+      $('.first-arrow').show();
+      $('.first-links').hide();
+    }
+    if($(window).scrollTop() > 200){
+      $('.level-one').hide();
+      $('.level-two').show();
+    }
+    if($(window).scrollTop() < 200){
+      $('.level-two').hide();
+    }
+    if($(window).scrollTop() < 278 && $(window).scrollTop() > 100){
+      $('.second-arrow').show();
+    }
+    if($(window).scrollTop() > 278){
+      $('.second-arrow').hide();
+    }
+    if($(window).scrollTop() > 300) {
+      $('#sun').hide();
+    }
+    if($(window).scrollTop() < 300) {
+      $('#sun').show();
+    }
+    if($(window).scrollTop() > 400 || $(window).scrollTop() < 200){
+      $('.level-two').hide();
+    }
+    if($(window).scrollTop() > 400){
+      $('.level-two').hide();
+      $('.level-three').show();
+    }
+    if($(window).scrollTop() > 600 || $(window).scrollTop() < 400){
+      $('.level-three').hide();
+    }
+    if($(window).scrollTop() > 475 || $(window).scrollTop() < 300){
+      $('.third-arrow').hide();
+    }
+    if($(window).scrollTop() < 475 && $(window).scrollTop() > 300){
+      $('.third-arrow').show();
+    }
+    if($(window).scrollTop() > 600) {
+      $('#moon').hide();
+      $('.level-four').show();
+    }
+    if($(window).scrollTop() < 610) {
+      $('#moon').show();
+      $('.level-four').hide();
+    }
+    if($(window).scrollTop() > 810) {
+      $('.level-four').hide();
+    }
+    if($(window).scrollTop() > 795) {
+      $('#ufo').fadeTo('fast', 0);
+    }
   });
 });
