@@ -10,7 +10,7 @@ $(document).ready(function() {
 
   $('#down-button').on('click', function() {
     if ($(window).scrollTop() < 93 ) {
-      $(document.body).animate({ scrollTop: 100 }, 600);
+      $(document.body).animate({ scrollTop: 130 }, 600);
       return false;
     } else if ($(window).scrollTop() < 293 ) {
       $(document.body).animate({ scrollTop: 300 }, 600);

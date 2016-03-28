@@ -35,7 +35,7 @@ body {
 }
 #steve {
   position: absolute;
-  top: 200px;
+  top: 230px;
   left: 0;
   right: 0;
   margin: auto;
@@ -60,8 +60,9 @@ h5 {
 ul li {
     list-style-type: circle;
     list-style-position: inside;
-    font-size: .8em;
+    font-size: 1em;
     text-align: left;
+
 }
 #mountains {
   position: fixed;
@@ -73,7 +74,7 @@ ul li {
 #ufo {
   position: absolute;
   right: 30%;
-  top: 1000px;
+  top: 1060px;
   width: 350px;
   z-index: 1;
   opacity: .8;
@@ -87,18 +88,18 @@ ul li {
 }
 #reveal-box2 {
   width: 100%;
-  height: 100px;
+  height: 130px;
   background-color: wheat;
   position: fixed;
-  top: 200px;
+  top: 230px;
   z-index: 1;
 }
 #reveal-box3 {
   width: 100%;
-  height: 100px;
+  height: 130px;
   background-color: wheat;
   position: fixed;
-  top: 400px;
+  top: 490px;
   z-index: 0;
 }
 #name {
@@ -122,30 +123,30 @@ ul li {
   height: 60px;
 }
 .first-arrow {
-  top: 100px;
+  top: 130px;
 }
 #projects {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  top: 130px;
+  top: 160px;
   color: black;
 }
 #project-one{
   position: absolute;
-  top: 210px;
+  top: 240px;
   color: wheat;
 }
 #project-two{
   position: absolute;
-  top: 310px;
+  top: 370px;
   color: black;
   z-index: 1;
 }
 #project-three{
   position: absolute;
-  top: 410px;
+  top: 500px;
   color: wheat;
 }
 .first-links {
@@ -165,7 +166,7 @@ ul li {
   ========================================
 */
 .second-arrow {
-  top: 520px;
+  top: 630px;
   display: none;
 }
 .level-two {
@@ -186,13 +187,13 @@ ul li {
 }
 #skill-two{
   position: absolute;
-  top: 510px;
+  top: 540px;
   color: black;
   z-index: 1;
 }
 #skill-three{
   position: absolute;
-  top: 610px;
+  top: 670px;
   color: wheat;
 }
 #moon {
@@ -221,7 +222,7 @@ ul li {
   left: 0;
   right: 0;
   margin: auto;
-  top: 530px;
+  top: 540px;
   color: black;
 }
 #about-one{
@@ -231,13 +232,13 @@ ul li {
 }
 #about-two{
   position: absolute;
-  top: 710px;
+  top: 740px;
   color: black;
   z-index: 1;
 }
 #about-three{
   position: absolute;
-  top: 810px;
+  top: 880px;
   color: wheat;
 }
 .thumbnail {
@@ -261,18 +262,18 @@ ul li {
 }
 #contact-one{
   position: absolute;
-  top: 810px;
+  top: 840px;
   color: wheat;
 }
 #contact-two{
   position: absolute;
-  top: 910px;
+  top: 960px;
   color: black;
   z-index: 1;
 }
 #contact-three{
   position: absolute;
-  top: 1010px;
+  top: 1100px;
   color: wheat;
 }
 #open-src {
