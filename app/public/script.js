@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   loopButton = function() {
-    $('#down-button').fadeTo('slow', 0.5)
-    $('#down-button').fadeTo('slow', 1, function() {
+    $('#down-button').fadeTo('fast', 0.3)
+    $('#down-button').fadeTo('fast', 1, function() {
       loopButton();
     })
   }
@@ -25,17 +25,17 @@ $(document).ready(function() {
   })
 
   $('#up-button').on('click', function() {
-    if ($(window).scrollTop() < 107 ) {
+    if ($(window).scrollTop() < 130 ) {
       $(document.body).animate({ scrollTop: 0 }, 600);
       return false;
-    } else if ($(window).scrollTop() < 307 ) {
-      $(document.body).animate({ scrollTop: 100 }, 600);
+    } else if ($(window).scrollTop() < 300 ) {
+      $(document.body).animate({ scrollTop: 130 }, 600);
       return false;
-    } else if ($(window).scrollTop() < 515 ) {
+    } else if ($(window).scrollTop() < 508 ) {
       $(document.body).animate({ scrollTop: 300 }, 600);
       return false;
-    } else if ($(window).scrollTop() < 716 ) {
-      $(document.body).animate({ scrollTop: 510 }, 600);
+    } else if ($(window).scrollTop() < 711 ) {
+      $(document.body).animate({ scrollTop: 507 }, 600);
       return false;
     } else if ($(window).scrollTop() > 725 ) {
       $(document.body).animate({ scrollTop: 710 }, 600);
