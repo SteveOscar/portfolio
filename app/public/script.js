@@ -26,7 +26,7 @@ $(document).ready(function() {
   });
 
   $('#up-button').on('click', function() {
-    if ($(window).scrollTop() < 130 ) {
+    if ($(window).scrollTop() < 135 ) {
       $(document.body).animate({ scrollTop: 0 }, 600);
       return false;
     } else if ($(window).scrollTop() < 305 ) {
