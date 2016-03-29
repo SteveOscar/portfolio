@@ -54,7 +54,7 @@ a.dark {
   color: black;
 }
 h5 {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 ul li {
     list-style-type: circle;
@@ -198,7 +198,7 @@ ul li {
 }
 #moon {
   position: absolute;
-  top: 820px;
+  top: 920px;
   left: 10%;
   height: 100px;
   opacity: .8;
