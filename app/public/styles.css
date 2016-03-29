@@ -32,6 +32,7 @@ body {
   float: left;
 }
 #steve {
+  display: none;
   position: absolute;
   top: 230px;
   left: 0;
@@ -151,6 +152,7 @@ ul li {
   display: none;
 }
 #sun {
+  display: none;
   position: absolute;
   top: 510px;
   left: 10%;
@@ -196,10 +198,10 @@ ul li {
 }
 #moon {
   position: absolute;
-  top: 810px;
+  top: 820px;
   left: 10%;
   height: 100px;
-  opacity: .5;
+  opacity: .8;
   z-index: 0;
 }
 

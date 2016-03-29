@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+  $('#sun').delay(1000).fadeTo('slow', 0.8);
+  $('#steve').delay(500).fadeTo('slow', 0.8);
   loopButton = function() {
     $('#down-button').fadeTo('medium', 0.3);
     $('#down-button').fadeTo('medium', 1, function() {
@@ -70,10 +71,10 @@ $(document).ready(function() {
     if($(window).scrollTop() < 200){
       $('.level-two').hide();
     }
-    if($(window).scrollTop() > 300) {
+    if($(window).scrollTop() > 285) {
       $('#sun').hide();
     }
-    if($(window).scrollTop() < 300) {
+    if($(window).scrollTop() < 285) {
       $('#sun').show();
     }
     if($(window).scrollTop() > 400 || $(window).scrollTop() < 200){
