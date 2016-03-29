@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
   loopButton = function() {
-    $('#down-button').fadeTo('fast', 0.3)
-    $('#down-button').fadeTo('fast', 1, function() {
+    $('#down-button').fadeTo('medium', 0.3);
+    $('#down-button').fadeTo('medium', 1, function() {
       loopButton();
-    })
-  }
+    });
+  };
   loopButton();
 
   $('#down-button').on('click', function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
       $(document.body).animate({ scrollTop: 710 }, 600);
       return false;
     }
-  })
+  });
 
   $('#up-button').on('click', function() {
     if ($(window).scrollTop() < 130 ) {
@@ -41,7 +41,7 @@ $(document).ready(function() {
       $(document.body).animate({ scrollTop: 710 }, 600);
       return false;
     }
-  })
+  });
 
   //when scrolling...
   $(window).scroll(function() {
@@ -70,12 +70,6 @@ $(document).ready(function() {
     if($(window).scrollTop() < 200){
       $('.level-two').hide();
     }
-    if($(window).scrollTop() < 278 && $(window).scrollTop() > 100){
-      $('.second-arrow').show();
-    }
-    if($(window).scrollTop() > 278){
-      $('.second-arrow').hide();
-    }
     if($(window).scrollTop() > 300) {
       $('#sun').hide();
     }
@@ -92,12 +86,6 @@ $(document).ready(function() {
     if($(window).scrollTop() > 600 || $(window).scrollTop() < 400){
       $('.level-three').hide();
     }
-    if($(window).scrollTop() > 475 || $(window).scrollTop() < 300){
-      $('.third-arrow').hide();
-    }
-    if($(window).scrollTop() < 475 && $(window).scrollTop() > 300){
-      $('.third-arrow').show();
-    }
     if($(window).scrollTop() > 600) {
       $('#moon').hide();
       $('.level-four').show();
@@ -109,7 +97,7 @@ $(document).ready(function() {
     if($(window).scrollTop() > 810) {
       $('.level-four').hide();
     }
-    if($(window).scrollTop() > 795) {
+    if($(window).scrollTop() > 710) {
       $('#ufo').fadeTo('fast', 0);
     }
   });

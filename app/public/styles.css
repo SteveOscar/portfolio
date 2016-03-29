@@ -8,8 +8,6 @@ body {
   background-color: black;
   font-family: 'Nunito', sans-serif;
   text-align: center;
-  /*min-height:100%;*/
-  /*height:auto !imporwheatt;*/
   height:1700px;
   overflow-y: scroll;
 }
