@@ -71,10 +71,10 @@ $(document).ready(function() {
     if($(window).scrollTop() < 200){
       $('.level-two').hide();
     }
-    if($(window).scrollTop() > 170) {
+    if($(window).scrollTop() > 270) {
       $('#sun').hide();
     }
-    if($(window).scrollTop() < 170) {
+    if($(window).scrollTop() < 270) {
       $('#sun').show();
     }
     if($(window).scrollTop() > 400 || $(window).scrollTop() < 200){
@@ -88,11 +88,15 @@ $(document).ready(function() {
       $('.level-three').hide();
     }
     if($(window).scrollTop() > 600) {
-      $('#moon').hide();
       $('.level-four').show();
     }
-    if($(window).scrollTop() < 610) {
+    if($(window).scrollTop() > 680) {
+      $('#moon').hide();
+    }
+    if($(window).scrollTop() < 680) {
       $('#moon').show();
+    }
+    if($(window).scrollTop() < 610) {
       $('.level-four').hide();
     }
     if($(window).scrollTop() > 810) {
