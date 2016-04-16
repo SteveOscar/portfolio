@@ -3,10 +3,6 @@
   body
   ========================================
 */
-.thing {
-  margin: 2px;
-  font-size: .9em;
-}
 body {
   background-color: black;
   font-family: 'Nunito', sans-serif;
@@ -287,4 +283,12 @@ ul li {
   #headline{
     font-size: 3.5rem;
   }
+}
+.thing {
+  margin: 2px;
+  font-size: .9em;
+}
+p {
+  margin: 2px;
+  font-size: 9.em;
 }
